@@ -70,8 +70,6 @@ Specific Risks:
 4. Persistence: An attacker could install a web shell or SSH backdoors to maintain access even after the session ends.
 
 ---
-Recommended 
-
-Mitigation
+Recommended Mitigation
 
 To mitigate the Local File Inclusion (LFI) vulnerability, the application should prevent user-controlled input from influencing file paths or inclusion logic. Implement a strict allow‑list of permitted files or directories and avoid dynamically including files based on request parameters. All file paths should be resolved to absolute paths, normalized, and validated to ensure they remain within an expected application directory. Additionally, enforce the principle of least privilege on the web server and application runtime so that even if file access is attempted, sensitive system files cannot be read.
