@@ -26,11 +26,11 @@ CVSS:4.0/AV:N/AC:L/AT:N/PR:H/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N
 
 Affected URL:
 
-https://<server-ip>/mpp/admin/logs/showlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
+https://\<server-ip\>/mpp/admin/logs/showlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
 
-https://<server-ip>/mpp/admin/logs/getlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
+https://\<server-ip\>/mpp/admin/logs/getlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
 
-https://<server-ip>/mpp/admin/logs/clearlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
+https://\<server-ip\>/mpp/admin/logs/clearlogfile.php?dirname=\<dir\>&filename=<file> [filename parameter]
 
 It was found log viewing function of the Avaya Experience Portal MPP 8.1.2.3.0064 allow local file inclusion in the filename parameter. Attacker can modify the filename parameter to obtain any file within the web servers which the web service account have account to. 
 
